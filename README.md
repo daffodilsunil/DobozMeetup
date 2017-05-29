@@ -3,6 +3,9 @@
 ## Angular book 
 [https://angular-2-training-book.rangle.io/](https://angular-2-training-book.rangle.io/ "Angular book")
 
+## Node.js & npm install
+[https://nodejs.org/en/download/](https://nodejs.org/en/download/ "Node.js & npm install")
+
 ## Angular CLI
 [https://cli.angular.io/](https://cli.angular.io/ "Angular CLI")
 
