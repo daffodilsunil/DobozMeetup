@@ -5,3 +5,5 @@
 /MeetUpDemoBackEnd/MeetUpDemoBackEnd/bin
 /MeetUpDemoBackEnd/MeetUpDemoBackEnd/obj/Debug
 /MeetUpDemoBackEnd/packages
+/MeetUpDemoBackEnd/MeetUpDemoBackEnd/npm-debug.log
+/MeetUpDemoBackEnd/MeetUpDemoBackEnd/webApp/src/shared/node_modules

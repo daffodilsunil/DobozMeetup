@@ -22,6 +22,10 @@
   </tbody>
 </table>
 
+<toast-message-component [alerts]="messageList"></toast-message-component>
+
+
+
 <form #heroForm="ngForm" (ngSubmit)="onSubmit(heroForm)" novalidate> 
     <div class="form-group">
       <label for="firstName">First Name</label>

@@ -4,7 +4,10 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
+import { BootstrapAlertService } from "ng2-alert-service/bootstrap-alert.service";
+import { BootstrapAlertModule } from 'ng2-alert-service/bootstrap-alert.module';
 
 @NgModule({
   declarations: [
@@ -14,9 +17,10 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     BrowserModule,
     FormsModule,
     HttpModule,
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
+    BootstrapAlertModule
   ],
-  providers: [],
+  providers: [BootstrapAlertService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

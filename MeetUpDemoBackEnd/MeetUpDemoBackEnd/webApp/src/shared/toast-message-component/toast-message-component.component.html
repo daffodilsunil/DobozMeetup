@@ -1,0 +1,5 @@
+<div class="floating-alert">
+  <div class="alert alert-{{alertObject.type}}" *ngFor="let alertObject of alerts">
+    <button class="close" data-dismiss="alert" aria-label="close" title="close" (click)="closeAlert(alertObject)">  <span aria-hidden="true">&times;</span></button>    {{alertObject.message}}
+  </div>
+</div>

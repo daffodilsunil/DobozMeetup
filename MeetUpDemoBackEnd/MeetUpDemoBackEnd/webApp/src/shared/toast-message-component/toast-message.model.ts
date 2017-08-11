@@ -1,0 +1,6 @@
+export class ToastMessageModel {
+    id: number;
+    type: string;
+    message: string;
+    messageLocalized: string;
+}
