@@ -1,24 +1,24 @@
 # Angular toast message service
 
-Show toast messages from anywhere in your angular application.
+Show toast messages (bootstrap alerts) from anywhere in your angular application.
 Can be used in Angular 2 and 4 projects as well.
 
+[Github](https://github.com/speti43/DobozMeetup/tree/master/MeetUpDemoBackEnd/MeetUpDemoBackEnd/webApp/src/shared)
+
+[Demo](https://raw.githubusercontent.com/speti43/DobozMeetup/master/MeetUpDemoBackEnd/MeetUpDemoBackEnd/webApp/src/shared/demo.png)
 ## Usage
 
 app.module.ts:
 ```
-import { BootstrapAlertService } from "ng2-alert-service/bootstrap-alert.service";
 import { BootstrapAlertModule } from 'ng2-alert-service/bootstrap-alert.module';
-
 ...
-
 imports: [
     ...
     BootstrapAlertModule
-  ],
-  providers: [BootstrapAlertService],
+  ]
 
 ```
+
 
 
 app.component.ts:
@@ -41,6 +41,7 @@ ngOnInit() {
 ```
 
 
+
 app.component.html:
 ```
 <toast-message-component [alerts]="messageList"></toast-message-component>
@@ -55,15 +56,11 @@ constructor(private bootstrapAlertService: BootstrapAlertService) {
 
 }
 
-this.bootstrapAlertService.showError('This is an error!');
-
-    
-this.bootstrapAlertService.showInfo('This is an info!');
-
-    
-this.bootstrapAlertService.showWarning('This is a warning!');
-
-    
-this.bootstrapAlertService.showSucccess('This is a success message!');
+someMethod(){
+    this.bootstrapAlertService.showError('This is an error!');    
+    this.bootstrapAlertService.showInfo('This is an info!');    
+    this.bootstrapAlertService.showWarning('This is a warning!');    
+    this.bootstrapAlertService.showSucccess('This is a success message!');
+}
 
 ```

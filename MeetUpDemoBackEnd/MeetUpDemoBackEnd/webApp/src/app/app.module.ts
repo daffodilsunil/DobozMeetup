@@ -6,7 +6,6 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
-import { BootstrapAlertService } from "ng2-alert-service/bootstrap-alert.service";
 import { BootstrapAlertModule } from 'ng2-alert-service/bootstrap-alert.module';
 
 @NgModule({
@@ -20,7 +19,6 @@ import { BootstrapAlertModule } from 'ng2-alert-service/bootstrap-alert.module';
     NgbModule.forRoot(),
     BootstrapAlertModule
   ],
-  providers: [BootstrapAlertService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
