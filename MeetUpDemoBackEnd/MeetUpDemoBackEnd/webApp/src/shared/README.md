@@ -1,11 +1,19 @@
-# Angular toast message service
+# Angular 4 toast message service
+
+Excuse me for the misleading package name.
+**This package is not compatible with Angular 2!**
 
 Show toast messages (bootstrap alerts) from anywhere in your angular application.
-Can be used in Angular 2 and 4 projects as well.
+Can be used in Angular 4 projects.
 
 [Github](https://github.com/speti43/DobozMeetup/tree/master/MeetUpDemoBackEnd/MeetUpDemoBackEnd/webApp/src/shared)
 
 [Demo](https://raw.githubusercontent.com/speti43/DobozMeetup/master/MeetUpDemoBackEnd/MeetUpDemoBackEnd/webApp/src/shared/demo.png)
+
+## Install
+```
+npm i ng2-alert-service@latest --save
+```
 ## Usage
 
 app.module.ts:
