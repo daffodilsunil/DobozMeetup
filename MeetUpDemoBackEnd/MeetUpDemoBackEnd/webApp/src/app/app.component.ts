@@ -22,22 +22,9 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.refreshList();
+ //   this.refreshList();
 
-    this.bootstrapAlertService.getAlertEvent().subscribe(r => {
-      this.messageList.push(r);
-    })
-
-    this.bootstrapAlertService.showError('This is an error!');
-
-
-    this.bootstrapAlertService.showInfo('This is an info!');
-
-
-    this.bootstrapAlertService.showWarning('This is a warning!');
-
-
-    this.bootstrapAlertService.showSucccess('This is a success message!');
+  
   }
 
   onSubmit(heroForm: NgForm) {
@@ -56,5 +43,9 @@ export class AppComponent implements OnInit {
   deleteItem(index) {
     this.http.delete('api/values/' + index).subscribe(() =>
       this.refreshList());
+  }
+
+  fileuploaderFileChange(event){
+
   }
 }
