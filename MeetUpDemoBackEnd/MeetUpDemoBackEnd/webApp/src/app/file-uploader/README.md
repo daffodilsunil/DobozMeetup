@@ -1,8 +1,8 @@
 # Angular 4 File Uploader
 
-[Github](https://github.com/speti43/DobozMeetup/tree/master/MeetUpDemoBackEnd/MeetUpDemoBackEnd/webApp/src/shared)
+[Github](https://github.com/speti43/DobozMeetup/tree/master/MeetUpDemoBackEnd/MeetUpDemoBackEnd/webApp/src/app/file-uploader)
 
-[Demo](https://raw.githubusercontent.com/speti43/DobozMeetup/master/MeetUpDemoBackEnd/MeetUpDemoBackEnd/webApp/src/shared/demo.png)
+[Demo](https://github.com/speti43/DobozMeetup/blob/master/MeetUpDemoBackEnd/MeetUpDemoBackEnd/webApp/src/app/file-uploader/demo.png)
 
 ## Install
 ```
