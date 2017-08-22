@@ -25,7 +25,7 @@ imports: [
 app.component.ts:
 ```
 
-fileuploaderFileChange(event){
+fileuploaderFileChange(files: FileList){
 
 }
 
