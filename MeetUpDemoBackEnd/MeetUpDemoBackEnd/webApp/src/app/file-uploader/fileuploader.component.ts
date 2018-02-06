@@ -4,8 +4,8 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
     selector: 'file-uploader',
     templateUrl: 'fileuploader.html',
     styleUrls: [
-        // '../../../node_modules/bootstrap/dist/css/bootstrap.min.css',
-        '../bootstrap/dist/css/bootstrap.min.css',
+        '../../../node_modules/bootstrap/dist/css/bootstrap.min.css',
+        //'../bootstrap/dist/css/bootstrap.min.css',
         './fileuploader.component.css']
 })
 export class FileUploaderComponent {

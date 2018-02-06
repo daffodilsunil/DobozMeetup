@@ -2,8 +2,6 @@ import { Component, ViewChild, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Http, RequestOptions, Headers } from '@angular/http';
 import { UserModel } from './user.model';
-import { BootstrapAlertService } from 'ng2-alert-service/bootstrap-alert.service';
-import { ToastMessageModel } from 'ng2-alert-service/toast-message-component/toast-message.model';
 
 @Component({
   selector: 'app-root',
@@ -13,11 +11,9 @@ import { ToastMessageModel } from 'ng2-alert-service/toast-message-component/toa
 export class AppComponent implements OnInit {
   title = 'app works!';
   users: UserModel[];
-  messageList: ToastMessageModel[] = [];
 
 
-  constructor(private http: Http,
-    private bootstrapAlertService: BootstrapAlertService) {
+  constructor(private http: Http) {
 
   }
 

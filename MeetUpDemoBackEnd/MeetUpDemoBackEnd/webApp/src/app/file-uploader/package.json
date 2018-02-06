@@ -1,6 +1,6 @@
 {
   "name": "ng4-file-upload",
-  "version": "1.0.3",
+  "version": "5.0.0",
   "author": {
     "name": "Peter Silling",
     "email": "speti43@gmail.com",
@@ -9,9 +9,9 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
-    "@angular/common": "^4.0.0",
-    "@angular/compiler": "^4.0.0",
-    "@angular/core": "^4.0.0",
-    "bootstrap": "4.0.0-alpha.6"
+    "@angular/common": "^5.0.0",
+    "@angular/compiler": "^5.0.0",
+    "@angular/core": "^5.0.0",
+    "bootstrap": "^4.0.0"
   }
 }

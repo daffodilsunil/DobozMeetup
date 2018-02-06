@@ -6,7 +6,6 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
-import { BootstrapAlertModule } from 'ng2-alert-service/bootstrap-alert.module';
 import { FileUploaderModule } from "./file-uploader/file-uploader.module";
 
 @NgModule({
@@ -18,7 +17,6 @@ import { FileUploaderModule } from "./file-uploader/file-uploader.module";
     FormsModule,
     HttpModule,
     NgbModule.forRoot(),
-    BootstrapAlertModule,
     FileUploaderModule
   ],
   bootstrap: [AppComponent]

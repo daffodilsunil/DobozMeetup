@@ -48,7 +48,6 @@
   </div>
   <button type="submit" class="btn btn-primary" [disabled]="!heroForm.valid">Submit</button>
 </form>
-<toast-message-component [alerts]="messageList"></toast-message-component>
 <br>
 <file-uploader [maxSizeInKb]="110" [allowMultiple]="false" [fileType]="'application/*'" (onSelection)="fileuploaderFileChange($event)"
   [required]="false"></file-uploader>
