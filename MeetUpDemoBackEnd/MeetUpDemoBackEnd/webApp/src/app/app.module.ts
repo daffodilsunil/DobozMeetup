@@ -6,7 +6,7 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
-import { FileUploaderModule } from "./file-uploader/file-uploader.module";
+import { FileUploaderModule } from "./file-uploader";
 
 @NgModule({
   declarations: [

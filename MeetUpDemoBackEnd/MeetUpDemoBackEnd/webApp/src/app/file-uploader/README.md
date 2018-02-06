@@ -8,6 +8,21 @@
 ```
 npm i ng4-file-upload@latest --save
 ```
+add "include" section below to tsconfig.json
+
+```
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    ...
+  },
+  "include": [
+    "src/**/*",
+    "node_modules/ng4-file-upload/index.ts"
+  ]
+}
+```
+
 ## Usage
 
 app.module.ts:
