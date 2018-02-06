@@ -33,6 +33,6 @@ fileuploaderFileChange(files: FileList){
 
 app.component.html:
 ```
-<file-uploader [maxSizeInKb]="110" [allowMultiple]="false" [fileType]="'application/*'" 
+<file-uploader [maxSizeInKb]="110" [allowMultiple]="False" [fileType]="'application/*'" 
 (onSelection)="fileuploaderFileChange($event)"  [required]="false"></file-uploader>
 ```
