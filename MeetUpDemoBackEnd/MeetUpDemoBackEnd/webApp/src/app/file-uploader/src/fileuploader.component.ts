@@ -17,7 +17,6 @@ export class FileUploaderComponent {
     DisplayedText: string = "";
 
     fileChange(event: any) {
-        debugger;
         let fileList: FileList = event.target.files;
         let filetypeToCompare = this.fileType.replace('*', '');
 
