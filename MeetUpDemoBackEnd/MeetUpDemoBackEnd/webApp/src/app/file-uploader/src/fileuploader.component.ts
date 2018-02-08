@@ -17,13 +17,14 @@ export class FileUploaderComponent {
     DisplayedText: string = "";
 
     fileChange(event: any) {
+        debugger;
         let fileList: FileList = event.target.files;
         let filetypeToCompare = this.fileType.replace('*', '');
 
         let hasFile = fileList && fileList.length > 0;
 
         if (hasFile) {
-            if (filetypeToCompare != "application/" && filetypeToCompare.indexOf(fileList[0].type) == -1) {
+            if (filetypeToCompare != "application/" && fileList[0].type.indexOf(filetypeToCompare) == -1) {
                 fileList = null;
                 this.DisplayedText = "";
             }
