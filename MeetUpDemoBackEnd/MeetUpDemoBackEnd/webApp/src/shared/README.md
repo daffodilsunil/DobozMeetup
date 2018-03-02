@@ -65,7 +65,7 @@ app.component.html:
 
 You can now throw messages from anywhere you like, for example from a service:
 ```
-import { BootstrapAlertService } from 'ng2-alert-service/bootstrap-alert.service';
+import { BootstrapAlertService } from 'ngx-bootstrap-alert-service';
 
 constructor(private bootstrapAlertService: BootstrapAlertService) {
 
