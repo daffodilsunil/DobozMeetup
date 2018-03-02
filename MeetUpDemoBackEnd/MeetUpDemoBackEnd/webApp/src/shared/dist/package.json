@@ -1,6 +1,6 @@
 {
   "name": "ngx-bootstrap-alert-service",
-  "version": "5.0.2", 
+  "version": "5.0.3", 
   "main": "bundles/ngx-bootstrap-alert-service.umd.js",
   "module": "index.js",
   "typings": "index.d.ts",
