@@ -10,8 +10,20 @@
   "private": false,
   "dependencies": {
     "@angular/common": "^5.0.0",
-    "@angular/compiler": "^5.0.0",
     "@angular/core": "^5.0.0",
     "bootstrap": "4.0.0"
+  },
+  "scripts": {
+    "transpile": "ngc",
+    "package": "rollup -c -f umd --name ng4-file-upload",
+    "minify": "uglifyjs dist/bundles/ng4-file-upload.umd.js --screw-ie8 --compress --mangle --comments --output dist/bundles/ng4-file-upload.umd.min.js",
+    "build": "npm run transpile && npm run package && npm run minify"
+  },
+  "devDependencies": {
+    "@angular/compiler": "^5.2.7",
+    "@angular/compiler-cli": "^5.2.7",
+    "rollup": "^0.56.3",
+    "typescript": "^2.7.2",
+    "uglify-js": "^3.3.12"
   }
 }

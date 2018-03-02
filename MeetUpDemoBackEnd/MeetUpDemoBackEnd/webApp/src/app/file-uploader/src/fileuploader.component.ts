@@ -2,11 +2,20 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
     selector: 'file-uploader',
-    templateUrl: 'fileuploader.html',
-    styleUrls: [
-        '../../../../node_modules/bootstrap/dist/css/bootstrap.min.css',
-        //'../../bootstrap/dist/css/bootstrap.min.css',
-        './fileuploader.component.css']
+    template: `<div class="btn-toolbar mb-3" role="toolbar">
+    <div class="input-group">
+        <div class="input-group-prepend">
+            <label class="btn btn-primary">
+                <span>Browse</span>...
+                <input type="file" accept="{{fileType}}" style="display: none;" (change)="fileChange($event)" [attr.multiple]="allowMultiple">
+            </label>
+        </div>
+        <input type="text" class="form-control" [value]="DisplayedText" disabled="" [class.ng-invalid-right]="required && !DisplayedText"
+            [class.ng-valid-right]="required && DisplayedText">
+    </div>
+</div>`,    
+    styles: [`
+        label.btn{  margin: 0;}`]
 })
 export class FileUploaderComponent {
     @Input() allowMultiple: boolean;
