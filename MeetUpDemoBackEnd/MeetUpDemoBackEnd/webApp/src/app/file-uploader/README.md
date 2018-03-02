@@ -27,7 +27,7 @@ add "include" section below to tsconfig.json
 
 app.module.ts:
 ```
-import { FileUploaderModule } from "ng4-file-upload/file-uploader.module";
+import { FileUploaderModule } from "ng4-file-upload";
 
 ...
 imports: [
