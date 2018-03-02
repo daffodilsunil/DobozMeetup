@@ -38,8 +38,8 @@ imports: [
 
 app.component.ts:
 ```
-import { BootstrapAlertService } from 'ng2-alert-service/bootstrap-alert.service';
-import { ToastMessageModel } from 'ng2-alert-service/toast-message-component/toast-message.model';
+import { BootstrapAlertService } from 'ngx-bootstrap-alert-service';
+import { ToastMessageModel } from 'ngx-bootstrap-alert-service';
 
 constructor(private bootstrapAlertService: BootstrapAlertService) {
 
