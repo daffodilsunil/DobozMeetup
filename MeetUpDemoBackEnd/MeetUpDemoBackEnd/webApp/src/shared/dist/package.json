@@ -1,0 +1,33 @@
+{
+  "name": "ngx-bootstrap-alert-service",
+  "version": "5.0.0", 
+  "main": "bundles/ngx-bootstrap-alert-service.umd.js",
+  "module": "index.js",
+  "typings": "index.d.ts",
+  "keywords": [   
+    "angular4",
+    "angular5"
+  ],
+  "author": {
+    "name": "Peter Silling",
+    "email": "speti43@gmail.com",
+    "url": "https://github.com/speti43/"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/speti43/DobozMeetup/tree/master/MeetUpDemoBackEnd/MeetUpDemoBackEnd/webApp/src/shared"
+  },
+  "private": false,  
+  "homepage": "https://github.com/speti43/DobozMeetup/tree/master/MeetUpDemoBackEnd/MeetUpDemoBackEnd/webApp/src/shared",
+  "bugs": {
+    "url": "https://github.com/speti43/DobozMeetup/issues"
+  },
+  "peerDependencies": {
+    "@angular/common":"^4.0.0 || ^5.0.0 ",
+    "@angular/core": "^4.0.0 || ^5.0.0 "
+  },
+  "dependencies": {
+    "bootstrap": "4.0.0"
+  }
+}

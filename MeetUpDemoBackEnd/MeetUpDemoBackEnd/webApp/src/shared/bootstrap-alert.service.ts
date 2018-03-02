@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs/Subject';
+import { Observable } from 'rxjs/Observable';
 import { ToastMessageModel } from './toast-message-component/toast-message.model';
 
 @Injectable()

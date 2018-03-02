@@ -1,6 +1,6 @@
 {
-  "name": "ng2-alert-service",
-  "version": "1.1.2",
+  "name": "ngx-bootstrap-alert-service",
+  "version": "5.0.0",
   "author": {
     "name": "Peter Silling",
     "email": "speti43@gmail.com",
@@ -9,10 +9,23 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
-    "@angular/common": "^4.0.0",
-    "@angular/compiler": "^4.0.0",
-    "@angular/core": "^4.0.0",
-    "bootstrap": "4.0.0-alpha.6",
+    "@angular/common": "^5.0.0",
+    "@angular/compiler": "^5.0.0",
+    "@angular/core": "^5.0.0",
+    "bootstrap": "4.0.0",
     "rxjs": "^5.1.0"
+  },
+  "scripts": {
+    "transpile": "ngc",
+    "package": "rollup -c -f umd --name ngx-bootstrap-alert-service",
+    "minify": "uglifyjs dist/bundles/ngx-bootstrap-alert-service.umd.js --screw-ie8 --compress --mangle --comments --output dist/bundles/ngx-bootstrap-alert-service.umd.min.js",
+    "build": "npm run transpile && npm run package && npm run minify"
+  },
+  "devDependencies": {
+    "@angular/compiler": "^5.0.0",
+    "@angular/compiler-cli": "^5.0.0",
+    "rollup": "^0.56.3",
+    "typescript": "^2.7.2",
+    "uglify-js": "^3.3.12"
   }
 }
